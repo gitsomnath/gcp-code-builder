@@ -5,7 +5,7 @@ steps:
     args: ["install"]
 
   # Build production package
-  - name: "gcr.io/cloud-builders/ng"
+  - name: "gcr.io/cloud-builders/npm"
     args: ["build", "--prod"]
 
   # Deploy to google cloud app engine

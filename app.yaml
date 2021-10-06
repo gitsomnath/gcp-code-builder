@@ -3,13 +3,12 @@ api_version: 1
 threadsafe: yes
 
 handlers:
-  - url: /(.*\.(gif|png|jpg|css|js)(|\.map))$
-    static_files: dist/gcp-code-builder/\1
-    upload: dist/gcp-code-builder/(.*)(|\.map)
-
-  - url: /(.*)
+  - url: /
     static_files: dist/gcp-code-builder/index.html
     upload: dist/gcp-code-builder/index.html
+
+  - url: /
+    static_dir: dist/gcp-code-builder
 
 skip_files:
   - e2e/

@@ -3,12 +3,10 @@ api_version: 1
 threadsafe: yes
 
 handlers:
-  - url: /
-    static_files: dist/gcp-code-builder/index.html
-    upload: dist/gcp-code-builder/index.html
 
-  - url: /
-    static_dir: dist/gcp-code-builder
+  - url: /(.*)
+    static_files: dist/angular-on-gcp/index.html
+    upload: dist/angular-on-gcp/index.html
 
 skip_files:
   - e2e/
